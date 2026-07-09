@@ -1,0 +1,48 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+a {
+  color: #10b981;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #059669;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 transition;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 transition hover:shadow-lg;
+}
+
+.badge {
+  @apply inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-danger {
+  @apply bg-red-100 text-red-800;
+}
